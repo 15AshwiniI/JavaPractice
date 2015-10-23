@@ -43,9 +43,10 @@ public class CollectionsPractice {
 		hm.put("Peanut Butter"," and Jelly");
 		hm.put("Salt"," and Pepper");
 		System.out.println("hm: "+ hm);
+		System.out.println("Value of Salt: "+hm.get("Salt"));
+        System.out.println("Is HashMap empty? "+hm.isEmpty());
 		hm.remove("Salt");
 		System.out.println("hm new: "+ hm);
-
 	}
 
 	public static void main(String[] args) {
