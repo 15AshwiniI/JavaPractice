@@ -17,28 +17,42 @@ public class CollectionsPractice {
 		alist.remove("bye");for(int i = 0; i < alist.size(); i++) {
 			System.out.println(alist.get(i));
 		}
-		
-		/*
-		ArrayList tasks = new ArrayList();
-		tasks.add("Eat");
-		tasks.add("Sleep");
-		tasks.add("Code");
-
-		for (Object task: tasks) {
-			System.out.println(task);
-		}
-		*/
 	}
 
 	public void SetPractice() {
-		List<String> nameList = Arrays.asList("Alan", "Ada", "Alan");
+		List<String> nameList = Arrays.asList("Alan", "Ada", "Alan", "Ashwini", "Ashwini");
+		System.out.println("nameList: " + nameList);
 		Set<String> nameSet = new HashSet<>(nameList);
 		System.out.println("nameSet: " + nameSet);
+	}
+
+	public void MapPractice() {
+		Map<String, String> capitals = new HashMap<>();
+		capitals.put("Georgia", "Atlanta");
+		capitals.put("Alabama", "Montgomery");
+		capitals.put("Florida", "Tallahassee");
+		capitals.put("California", "Sacramento");
+		for (String state: capitals.keySet()) {
+			System.out.println("Capital of " + state + " is "
+			+ capitals.get(state));
+		}
+	}
+
+	public void hashMapPracice() {
+		HashMap<String,String> hm = new HashMap<String,String>();
+		hm.put("Peanut Butter"," and Jelly");
+		hm.put("Salt"," and Pepper");
+		System.out.println("hm: "+ hm);
+		hm.remove("Salt");
+		System.out.println("hm new: "+ hm);
+
 	}
 
 	public static void main(String[] args) {
 		CollectionsPractice cp = new CollectionsPractice();
 		cp.ArListPractice();
 		cp.SetPractice();
+		cp.MapPractice();
+		cp.hashMapPracice();
 	}
 }
