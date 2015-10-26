@@ -1,0 +1,3 @@
+[0m[[31merror[0m] [0mTest [33mExceptionsTests[0m.[31muserDao[0m failed: -5 Doesn't set ArrayIndexOutOfBoundsException  as cause of NoSuchUserException, took 0.012 sec[0m
+[0m[[31merror[0m] [0mTest [33mExceptionsTests[0m.[31mexceptionCause[0m failed: -5 Exception cause was not correct expected:<java.lang.Throwable: Test throwable> but was:<null>, took 0.011 sec[0m
+[0m[[31merror[0m] [0mTest [33mExceptionsTests[0m.[31mexceptionMessage[0m failed: -10 Exception message was not correct expected:<User[ 7 ]does not exist> but was:<User[7]does not exist>, took 0.003 sec[0m
